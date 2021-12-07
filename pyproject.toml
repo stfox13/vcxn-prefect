@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "vcxn-prefect"
+version = "0.1.0"
+description = "Sample project to get familiar with Prefect"
+authors = ["None"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+prefect = "^0.15.10"
+pandas = "^1.3.4"
+boto3 = "^1.20.21"
+hvac = {extras = ["parser"], version = "^0.11.2"}
+azure-storage-blob = "^12.9.0"
+ipython = "^7.30.1"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+pytest = "^6.2.5"
+pyproject-flake8 = "^0.0.1-alpha.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
